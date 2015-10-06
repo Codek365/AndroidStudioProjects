@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">lession_switch_screen</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_screen2">Screen2</string>
+</resources>
