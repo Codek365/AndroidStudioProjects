@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         txtvCount = (TextView) findViewById(R.id.textViewCount);
 
-        new CountDownTimer(5000, 1000) {
+        new CountDownTimer(50000, 100) {
             @Override
             public void onTick(long millisUntilFinished) {
                 int n = Integer.parseInt(txtvCount.getText().toString());
@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onFinish() {
+
                 txtvCount.setText("Xong!");
             }
         }.start();
