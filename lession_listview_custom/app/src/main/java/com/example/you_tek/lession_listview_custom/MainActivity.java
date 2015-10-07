@@ -1,7 +1,7 @@
 package com.example.you_tek.lession_listview_custom;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
@@ -11,32 +11,28 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     ListView lv;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        lv = (ListView) findViewById(R.id.SinhVien);
+
+        lv = (ListView)findViewById(R.id.SinhVien);
 
         ArrayList<SinhVien> mangSinhVien = new ArrayList<SinhVien>();
-        mangSinhVien.add(new SinhVien("nguyen van A", 1986));
-        mangSinhVien.add(new SinhVien("nguyen van B", 1987));
-        mangSinhVien.add(new SinhVien("nguyen van c",1988));
-        mangSinhVien.add(new SinhVien("nguyen van D",1989));
-        mangSinhVien.add(new SinhVien("nguyen van E",1990));
-        mangSinhVien.add(new SinhVien("nguyen van F",1991));
+
+        mangSinhVien.add(new SinhVien("Nguyen van a",1990));
+        mangSinhVien.add(new SinhVien("Nguyen van b",1991));
+        mangSinhVien.add(new SinhVien("Nguyen van c",1992));
+        mangSinhVien.add(new SinhVien("Nguyen van d",1993));
+        mangSinhVien.add(new SinhVien("Nguyen van e",1994));
 
         ListAdapter adapter = new ListAdapter(
                 MainActivity.this,
                 R.layout.activity_dong_sinh_vien,
                 mangSinhVien
         );
-
         lv.setAdapter(adapter);
-
-
-
-
-
 
     }
 

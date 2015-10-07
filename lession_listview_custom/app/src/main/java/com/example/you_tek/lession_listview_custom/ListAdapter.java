@@ -37,8 +37,11 @@ public class ListAdapter extends ArrayAdapter<SinhVien> {
 
         if (p != null) {
             // Anh xa + Gan gia tri
-            TextView tt11 = (TextView) v.findViewById(R.id.textViewHoTen);
-            TextView tt12 = (TextView) v.findViewById(R.id.textViewNamSinh);
+            TextView tt1 = (TextView) v.findViewById(R.id.textViewHoTen);
+            tt1.setText(p.HoTen);
+
+            TextView tt2 = (TextView) v.findViewById(R.id.textViewNamSinh);
+            tt2.setText(String.valueOf(p.NamSinh));
 
         }
 
