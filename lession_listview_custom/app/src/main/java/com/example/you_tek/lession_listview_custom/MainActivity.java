@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        lv = (ListView)findViewById(R.id.SinhVien);
+        lv = (ListView)findViewById(R.id.listViewSinhVien);
 
         ArrayList<SinhVien> mangSinhVien = new ArrayList<SinhVien>();
 
