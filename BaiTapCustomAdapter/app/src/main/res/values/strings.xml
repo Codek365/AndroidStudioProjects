@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bai Tap Custom Adapter</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_dong_conthu">DongConthu</string>
+</resources>

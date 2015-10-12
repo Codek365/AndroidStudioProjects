@@ -5,10 +5,14 @@ package com.example.you_tek.lession_listview_custom;
  */
 public class SinhVien {
     public String HoTen;
-    public Integer NamSinh;
+    public Integer Toan;
+    public Integer Ly;
+    public Integer Hoa;
 
-    public SinhVien(String hoTen, Integer namSinh) {
+    public SinhVien(String hoTen, Integer toan, Integer ly, Integer hoa) {
         HoTen = hoTen;
-        NamSinh = namSinh;
+        Toan = toan;
+        Ly = ly;
+        Hoa = hoa;
     }
 }

@@ -17,23 +17,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        lv = (ListView)findViewById(R.id.SinhVien);
+        lv = (ListView)findViewById(R.id.listViewSinhVien);
 
         ArrayList<SinhVien> mangSinhVien = new ArrayList<SinhVien>();
 
-        mangSinhVien.add(new SinhVien("Nguyen van a",1990));
-        mangSinhVien.add(new SinhVien("Nguyen van b",1991));
-        mangSinhVien.add(new SinhVien("Nguyen van c",1992));
-        mangSinhVien.add(new SinhVien("Nguyen van d",1993));
-        mangSinhVien.add(new SinhVien("Nguyen van e",1994));
+        mangSinhVien.add(new SinhVien("Nguyen van a",8,8,8));
+        mangSinhVien.add(new SinhVien("Nguyen van b",8,8,8));
+        mangSinhVien.add(new SinhVien("Nguyen van c",8,8,8));
+        mangSinhVien.add(new SinhVien("Nguyen van d",8,8,8));
+        mangSinhVien.add(new SinhVien("Nguyen van e",8,8,8));
+
 
         ListAdapter adapter = new ListAdapter(
                 MainActivity.this,
                 R.layout.activity_dong_sinh_vien,
                 mangSinhVien
-        );
+        )  ;
         lv.setAdapter(adapter);
-
     }
 
     @Override

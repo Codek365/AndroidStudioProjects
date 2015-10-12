@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import static com.example.you_tek.lession_listview_custom.R.id.textViewHoa;
+
 /**
  * Created by you-tek on 07/10/2015.
  */
@@ -39,9 +41,12 @@ public class ListAdapter extends ArrayAdapter<SinhVien> {
             // Anh xa + Gan gia tri
             TextView tt1 = (TextView) v.findViewById(R.id.textViewHoTen);
             tt1.setText(p.HoTen);
-
-            TextView tt2 = (TextView) v.findViewById(R.id.textViewNamSinh);
-            tt2.setText(String.valueOf(p.NamSinh));
+            TextView tt2 = (TextView) v.findViewById(R.id.textViewToan);
+            tt1.setText(String.valueOf(p.Toan));
+            TextView tt3 = (TextView) v.findViewById(R.id.textViewLy);
+            tt1.setText(String.valueOf(p.Ly));
+            TextView tt4 = (TextView) v.findViewById(textViewHoa);
+            tt1.setText(String.valueOf(p.Hoa));
 
         }
 
