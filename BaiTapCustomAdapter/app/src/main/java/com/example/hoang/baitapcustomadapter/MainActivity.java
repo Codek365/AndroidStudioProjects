@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
     class LayHinhTuInternet extends AsyncTask<String,Integer,Bitmap> {
         @Override
         protected Bitmap doInBackground(String... params) {

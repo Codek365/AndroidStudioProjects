@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">lession_mp3_player</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_line_mp3">line_mp3</string>
+</resources>

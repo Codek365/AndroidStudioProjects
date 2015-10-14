@@ -8,6 +8,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.List;
 
 /**
@@ -40,9 +42,8 @@ public class ListAdapter extends ArrayAdapter<ConThu> {
             TextView Ten = (TextView) v.findViewById(R.id.textViewTenConThu);
             Ten.setText(p.TenConThu);
 
-            ImageView imgv = (ImageView) v.findViewById(R.id.imageViewHinh);
-            imgv.setImageBitmap(p.DuongDan);
-
+            final ImageView imgv = (ImageView) v.findViewById(R.id.imageViewHinh);
+            Picasso.with(getContext()).load("http://khoapham.vn/images/zoo/4.png").resize(100, 100).centerCrop().into(imgv);
         }
 
 
