@@ -22,13 +22,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         lv = (ListView) findViewById(R.id.listViewList);
-        private void runOnUiThread() {
-            new docJSON().execute("http://khoapham.vn/download/json/vd3.php");
-        }
+
 
     }
-
-
 
     class docJSON extends AsyncTask<String, Integer, String>{
 
@@ -39,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String s) {
-            Toast.makeText(getApplicationContext(), s, Toast.LENGTH_LONG).show();
+
+            Toast.makeText(getApplicationContext(), s + "", Toast.LENGTH_LONG).show();
         }
     }
     private static String docNoiDung_Tu_URL(String theUrl)
@@ -74,4 +71,7 @@ public class MainActivity extends AppCompatActivity {
         }
         return content.toString();
     }
-}
+
+
+
+    }
